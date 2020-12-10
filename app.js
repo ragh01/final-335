@@ -41,6 +41,10 @@ app.use("/api", productRoutes);
 // app.use("/api", orderRoutes);
 //app.use("/api", paymentBRoutes);
 
+app.get('/',(req,res)=>{
+  res.send('hello to 335-bazaar')
+})
+
 
 //PORT
 const port = process.env.PORT || 8000;
